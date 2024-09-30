@@ -1,213 +1,459 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 9ac47897-ff09-41ce-985f-720a28bdef54)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Mechanical:MountingHole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MountingHole" (at 0 3.175 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "mounting hole" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mounting Hole without connection" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "MountingHole*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MountingHole_0_1"
-        (circle (center 0 0) (radius 1.27)
-          (stroke (width 1.27) (type default))
-          (fill (type none))
-        )
-      )
-    )
-  )
-
-
-  (rectangle (start 127 50.8) (end 152.4 76.2)
-    (stroke (width 0) (type default))
-    (fill (type none))
-    (uuid f3f1dbd6-b913-4d78-90bf-a3e10a258620)
-  )
-
-  (text_box "REQUIREMENTS.-\n- 100 uA of current source for 4 different devices\n- Voltage measurements in range -50mV to +50mV\n- Ideal precision of 0.01 mV"
-    (at 88.9 81.28 0) (size 38.1 33.02)
-    (stroke (width 0) (type default))
-    (fill (type none))
-    (effects (font (size 1.27 1.27)) (justify left top))
-    (uuid f3f9d984-5b52-4bbb-88c6-3462de6f01b4)
-  )
-
-  (text "- Chip Carrier\n- Current Source\n- Channel mux\n- ADCs & OPAMPS\n "
-    (at 90.17 55.88 0)
-    (effects (font (size 1.5 1.5)) (justify left bottom))
-    (uuid 9aace049-9021-40de-8717-44c5cd0cfea2)
-  )
-  (text "Mounting Holes" (at 127 50.8 0)
-    (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify left bottom))
-    (uuid a97390ae-0236-4d47-b2d7-37655f70b549)
-  )
-  (text "↔" (at 63.5 60.96 0)
-    (effects (font (size 20 20)) (justify left bottom))
-    (uuid cdab31d5-4660-438b-9afb-570307a6fbb4)
-  )
-  (text "- RPi\n- Power supply\n- Connectors\n- Test points" (at 40.64 53.34 0)
-    (effects (font (size 1.5 1.5)) (justify left bottom))
-    (uuid e54daaf5-c8e4-4b3a-b08a-56518bc1c0cd)
-  )
-  (text "SPI, I2C" (at 72.39 57.15 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid f47130e1-0c41-4693-a0c9-06e190398d7d)
-  )
-  (text "1 - HW_MAGNETOMETER" (at 21.59 21.59 0)
-    (effects (font (size 4 4) (thickness 0.8) bold italic) (justify left bottom))
-    (uuid faf1b6c0-f48e-4e7b-b416-5d60bff38cf7)
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 130.81 60.96 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 65b2ef36-e91f-4b7a-9663-f1879d7a9a7b)
-    (property "Reference" "H102" (at 133.35 59.69 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 133.35 62.23 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 130.81 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 130.81 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "hw_magnetometer"
-        (path "/9ac47897-ff09-41ce-985f-720a28bdef54"
-          (reference "H102") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 130.81 54.61 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6951b840-a970-4c84-9f49-1bb17e851374)
-    (property "Reference" "H101" (at 133.35 53.34 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 133.35 55.88 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 130.81 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 130.81 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "hw_magnetometer"
-        (path "/9ac47897-ff09-41ce-985f-720a28bdef54"
-          (reference "H101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 130.81 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 7c84ff30-7a12-4f1e-98f1-4f90d283664e)
-    (property "Reference" "H103" (at 133.35 66.04 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 133.35 68.58 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 130.81 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 130.81 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "hw_magnetometer"
-        (path "/9ac47897-ff09-41ce-985f-720a28bdef54"
-          (reference "H103") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 130.81 73.66 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 907d91b1-217e-4791-9d5a-f7962f697eef)
-    (property "Reference" "H104" (at 133.35 72.39 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 133.35 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 130.81 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 130.81 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "hw_magnetometer"
-        (path "/9ac47897-ff09-41ce-985f-720a28bdef54"
-          (reference "H104") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet (at 88.9 38.1) (size 25.4 38.1)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 255 255 194 1.0000))
-    (uuid 2d1fd64d-ffe8-47bf-8db2-eb590f67a182)
-    (property "Sheetname" "MAGNETOMETER" (at 101.6 41.91 0)
-      (effects (font (size 2 2) bold) (justify bottom))
-    )
-    (property "Sheetfile" "MAGNETOMETER.kicad_sch" (at 88.9 76.7846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "hw_magnetometer"
-        (path "/9ac47897-ff09-41ce-985f-720a28bdef54" (page "3"))
-      )
-    )
-  )
-
-  (sheet (at 38.1 38.1) (size 25.4 38.1)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 255 255 194 1.0000))
-    (uuid 33280f87-6b0e-44db-89a3-47dc0f9dc6a8)
-    (property "Sheetname" "SPEL COMM" (at 50.8 41.91 0)
-      (effects (font (size 2 2) bold) (justify bottom))
-    )
-    (property "Sheetfile" "COMM.kicad_sch" (at 38.1 76.7846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "hw_magnetometer"
-        (path "/9ac47897-ff09-41ce-985f-720a28bdef54" (page "2"))
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "9ac47897-ff09-41ce-985f-720a28bdef54")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(rectangle
+		(start 80.01 38.1)
+		(end 105.41 63.5)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f3f1dbd6-b913-4d78-90bf-a3e10a258620)
+	)
+	(text_box "REQUIREMENTS.-\n- 100 uA of current source for 3 different devices\n- Voltage measurements in range +30mV to -30mV\n- Ideal precision of 0.01 mV"
+		(exclude_from_sim no)
+		(at 35.56 81.28 0)
+		(size 38.1 33.02)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f3f9d984-5b52-4bbb-88c6-3462de6f01b4")
+	)
+	(text "- Chip Carrier\n- Current Source\n- Channel mux\n- ADCs & OPAMPS\n "
+		(exclude_from_sim no)
+		(at 36.83 55.88 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "9aace049-9021-40de-8717-44c5cd0cfea2")
+	)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 80.01 38.1 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "a97390ae-0236-4d47-b2d7-37655f70b549")
+	)
+	(text "0 - HW_MAGNETOMETER"
+		(exclude_from_sim no)
+		(at 21.59 21.59 0)
+		(effects
+			(font
+				(size 4 4)
+				(thickness 0.8)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "faf1b6c0-f48e-4e7b-b416-5d60bff38cf7")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 83.82 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65b2ef36-e91f-4b7a-9663-f1879d7a9a7b")
+		(property "Reference" "H2"
+			(at 86.36 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 86.36 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "hw_magnetometer"
+				(path "/9ac47897-ff09-41ce-985f-720a28bdef54"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 83.82 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6951b840-a970-4c84-9f49-1bb17e851374")
+		(property "Reference" "H1"
+			(at 86.36 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 86.36 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "hw_magnetometer"
+				(path "/9ac47897-ff09-41ce-985f-720a28bdef54"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 83.82 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c84ff30-7a12-4f1e-98f1-4f90d283664e")
+		(property "Reference" "H3"
+			(at 86.36 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 86.36 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "hw_magnetometer"
+				(path "/9ac47897-ff09-41ce-985f-720a28bdef54"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 83.82 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "907d91b1-217e-4791-9d5a-f7962f697eef")
+		(property "Reference" "H4"
+			(at 86.36 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 86.36 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "hw_magnetometer"
+				(path "/9ac47897-ff09-41ce-985f-720a28bdef54"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 38.1)
+		(size 38.1 38.1)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "2d1fd64d-ffe8-47bf-8db2-eb590f67a182")
+		(property "Sheetname" "MAGNETOMETER"
+			(at 48.26 41.91 0)
+			(effects
+				(font
+					(size 2 2)
+					(bold yes)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Sheetfile" "MAGNETOMETER.kicad_sch"
+			(at 35.56 76.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "hw_magnetometer"
+				(path "/9ac47897-ff09-41ce-985f-720a28bdef54"
+					(page "1")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "0")
+		)
+	)
 )
